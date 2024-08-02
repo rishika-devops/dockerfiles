@@ -1,6 +1,6 @@
 FROM almalinux:8
-CMD yum install nginx -y
+RUN  yum install -y nginx
 ENV TRAINING="DEVOPS" \
-      TRAINER="SIVAKUMAR" \
-      DURATION="120 HOURS" 
+    TRAINER="SIVAKUMAR" \
+    DURATION="120 HOURS" 
 CMD ["nginx","-g","daemon off;"]
