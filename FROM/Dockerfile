@@ -1,1 +1,2 @@
-FROM centos:8
+ARG version
+FROM almalinux:${version}
